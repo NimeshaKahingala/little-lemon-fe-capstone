@@ -1,0 +1,38 @@
+.meal-card {
+    background-color: #EDEFEE;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 20px;
+    width: 30%;
+
+    .description {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .img-meal {
+        border-radius: 15px 15px 0 0;
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .meal-card-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        .name {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .price {
+            color: #EE9972;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
