@@ -1,14 +1,21 @@
 .section-hero {
     background-color: #495E57;
     color: white;
+    padding-top: 85px;
 
     .btn-primary {
         background-color: #F4CE14;
-        border-radius: 12px;
+        border-radius: 20px;
         color: #333333;
         font-weight: 600;
         padding: 8px 20px;
         text-decoration: none;
+
+        &:hover {
+            background-color: #495E57;
+            border: 2px solid #F4CE14;
+            color: white;
+        }
     }
 
     .container {
@@ -16,7 +23,8 @@
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1300px;
-        padding: 20px 0;
+        padding: 60px 0;
+        width: 80%;
     }
 
     .img-wrap {
@@ -43,6 +51,8 @@
     .text {
         font-size: 18px;
         font-weight: 500;
-        width: 208px;
+        padding-bottom: 20px;
+        min-width: 208px;
+        width: 40%;
     }
 }

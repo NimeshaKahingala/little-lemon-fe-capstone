@@ -3,7 +3,7 @@ import './MenuCard.scss';
 
 function MenuCard(props) {
     return <article className="meal-card">
-        <img src={props.img} className="img-meal"></img>
+        <div className="img-wrap"><img src={props.img} className="img-meal"></img></div>
         <div className="meal-card-header">
             <h3 className="name">{props.name}</h3>
             <span className="price">{props.price}</span>

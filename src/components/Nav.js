@@ -6,6 +6,7 @@ import './Nav.scss';
 function Nav() {
     return <>
         <nav className="container nav-bar">
+            <div className="container">
             <div className="logo-wrap"><img src={logo} alt="logo" className="logo"></img></div>
             <ul>
                 <li><Link>Home</Link></li>
@@ -15,6 +16,7 @@ function Nav() {
                 <li><Link>Order Online</Link></li>
                 <li><Link>Login</Link></li>
             </ul>
+            </div>
         </nav>
     </>
 }

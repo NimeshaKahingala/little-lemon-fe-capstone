@@ -1,0 +1,20 @@
+.section-testimonials {
+    background-color: #495E57;
+
+    .container {
+        margin: auto;
+        max-width: 1300px;
+        padding: 40px 0 60px 0;
+        width: 80%;
+    }
+
+    .testimonial-wrap {
+        display: flex;
+    }
+
+    .title {
+        color: white;
+        font-size: 40px;
+    }
+
+}

@@ -1,0 +1,37 @@
+.section-specials {
+    .btn-primary {
+        background-color: #F4CE14;
+        border-radius: 20px;
+        color: #333333;
+        font-weight: 600;
+        padding: 8px 20px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #495E57;
+            color: white;
+        }
+    }
+
+    .meal-card-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-wrap {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+        }
+    }
+
+    &.container {
+        margin: 100px auto 80px auto;
+        max-width: 1300px;
+        width: 80%;
+    }
+}
