@@ -21,9 +21,9 @@ function Footer() {
             <div>
                 <h3 className="title">CONTACT US</h3>
                 <ul>
-                    <li><Link className="contact-details"><span class="material-symbols-outlined icon">location_on</span>320 Michigan Ave, Chicago, IL 80442</Link></li>
-                    <li><Link className="contact-details"><span class="material-symbols-outlined icon">call</span>(312) 532-5634</Link></li>
-                    <li><Link className="contact-details"><span class="material-symbols-outlined icon">mail</span>customer@littlelemon.com</Link></li>
+                    <li><Link className="contact-details"><span className="material-symbols-outlined icon">location_on</span>320 Michigan Ave, Chicago, IL 80442</Link></li>
+                    <li><Link className="contact-details"><span className="material-symbols-outlined icon">call</span>(312) 532-5634</Link></li>
+                    <li><Link className="contact-details"><span className="material-symbols-outlined icon">mail</span>customer@littlelemon.com</Link></li>
                 </ul>
             </div>
             <div>

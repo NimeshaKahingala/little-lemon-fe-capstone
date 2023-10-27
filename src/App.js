@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import BookingPage from './pages/booking/Booking';
+import BookingPage from './pages/booking/BookingPage';
 import HomePage from './pages/homepage/Homepage';
 
 function App() {

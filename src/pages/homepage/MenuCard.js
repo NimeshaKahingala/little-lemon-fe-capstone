@@ -11,7 +11,7 @@ function MenuCard(props) {
         <div>
             <p className="description">{props.description}</p>
         </div>
-        <div className="delivery">Order a delivery <span class=" icon material-symbols-outlined">
+        <div className="delivery">Order a delivery <span className=" icon material-symbols-outlined">
             motorcycle
         </span></div>
 
