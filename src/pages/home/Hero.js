@@ -10,7 +10,7 @@ function Hero() {
             <div className="title">Little Lemon</div>
             <div className="sub-title">Chicago</div>
             <p className="text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <Link className="btn-primary">Reserve a table</Link>
+            <Link className="btn-primary" to="./booking">Reserve a table</Link>
         </div>
         <div className="img-wrap">
             <img src={HeroImg} className="hero-img"></img>

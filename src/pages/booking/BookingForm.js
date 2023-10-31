@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import './BookingForm.scss';
 
-function BookingForm() {
+function BookingForm(props) {
     const [reservationDate, setReservationDate] = useState("");
     const [reservationTime, setReservationTime] = useState("");
     const [guestsCount, setGuestCount] = useState(1);
     const [occasionType, setOccasionType] = useState("");
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,7 +25,11 @@ function BookingForm() {
                         type="date"
                         id="res-date"
                         value={reservationDate}
-                        onChange={(e) => setReservationDate(e.target.value)}
+                        onChange={(e) => {
+                            setReservationDate(e.target.value);
+                            props.dispatch(e.target.value);
+
+                        }}
                     />
                 </div>
                 <div className="form-fields">
@@ -34,12 +39,9 @@ function BookingForm() {
                         value={reservationTime}
                         onChange={(e) => setReservationTime(e.target.value)}
                     >
-                        <option value={"17:00"}>17:00</option>
-                        <option value={"18:00"}>18:00</option>
-                        <option value={"19:00"}>19:00</option>
-                        <option value={"20:00"}>20:00</option>
-                        <option value={"21:00"}>21:00</option>
-                        <option value={"22:00"}>22:00</option>
+                        {props.availableTimes.map(times =>
+                            <option value={times} key={times}>{times}</option>
+                        )}
                     </select>
                 </div>
                 <div className="form-fields">

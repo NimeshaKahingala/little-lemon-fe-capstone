@@ -1,15 +1,23 @@
-import React from "react";
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
-import BookingForm from "./BookingForm";
+// import React from "react";
+// import Nav from "../../components/Nav";
+// import Footer from "../../components/Footer";
+// import BookingForm from "./BookingForm";
 
 
-function BookingPage() {
-    return <>
-        <Nav/>
-        <BookingForm/>
-        <Footer/>
-    </>
-}
+// function BookingPage() {
+    
+//     const updateTime = () => {
 
-export default BookingPage;
+//     }
+
+//     const initializeTimes = () => {
+        
+//     } 
+//     return <>
+//         <Nav/>
+//         <BookingForm/>
+//         <Footer/>
+//     </>
+// }
+
+// export default BookingPage;
