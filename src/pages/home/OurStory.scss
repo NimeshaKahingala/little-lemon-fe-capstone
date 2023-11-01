@@ -1,5 +1,8 @@
 .section-our-story {
-    display: flex;
+
+    .content-inner {
+        display: flex;
+    }
 
     .image {
         border-radius: 16px;
@@ -42,5 +45,35 @@
         max-width: 1300px;
         margin: 80px auto;
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .section-our-story {
+        .content-inner {
+            flex-direction: column;
+
+            .image {
+                width: 100%;
+
+                &.img-chef {
+                    margin: 0 0 15px 0;
+                }
+
+                &.img-chef-bottom {
+                    margin: 0;
+                }
+            }
+        }
+
+        .text {
+            margin: 0;
+            width: 100%;
+        }
+
+        &.container {
+            margin: 80px 0;
+            width: 100%;
+        }
     }
 }

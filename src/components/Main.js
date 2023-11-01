@@ -1,9 +1,9 @@
 import React, { useEffect, useReducer, useState } from "react";
 import { Route, Routes } from 'react-router-dom';
-import Nav from "./Nav";
 import Footer from "./Footer";
 import HomePage from "../pages/home/Homepage";
 import BookingForm from "../pages/booking/BookingForm";
+import Header from "./Header";
 
 function Main() {
     // const [availableTimes, setAvailableTimes]= useState([]);
@@ -26,7 +26,7 @@ function Main() {
 //       .catch((error) => console.log(error)); 
 //   }; 
     return <>
-        <Nav />
+        <Header />
         <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/booking" element={<BookingForm availableTimes={availableTimes} dispatch={dispatch} />}></Route>

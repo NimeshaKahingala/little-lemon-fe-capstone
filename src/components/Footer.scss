@@ -43,3 +43,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .footer {
+        .container {
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

@@ -10,7 +10,7 @@ function WeekSpecials() {
     return <section className="section-specials container">
         <div className="title-wrap">
             <h2 className="title">This week specials!</h2>
-            <Link className="btn-primary">Online Menu</Link>
+            <Link className="btn-primary" aria-label="On Click">Online Menu</Link>
         </div>
         <div className="meal-card-wrap"> 
             <MenuCard name="Greek Salad" price="$12.99" img={mealSaladImg} description="The famous greek salad of crispy lettuce, peppers, olives and

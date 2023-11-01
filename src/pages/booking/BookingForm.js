@@ -30,6 +30,7 @@ function BookingForm(props) {
                             props.dispatch(e.target.value);
 
                         }}
+                        required
                     />
                 </div>
                 <div className="form-fields">
@@ -38,6 +39,7 @@ function BookingForm(props) {
                         id="res-time"
                         value={reservationTime}
                         onChange={(e) => setReservationTime(e.target.value)}
+                        required
                     >
                         {props.availableTimes.map(times =>
                             <option value={times} key={times}>{times}</option>
@@ -53,7 +55,9 @@ function BookingForm(props) {
                         max="10"
                         id="guests"
                         value={guestsCount}
-                        onChange={(e) => setGuestCount(e.target.value)} />
+                        onChange={(e) => setGuestCount(e.target.value)} 
+                        required
+                    />
                 </div>
                 <div className="form-fields">
                     <label htmlFor="occasion">Occasion</label>
@@ -61,12 +65,13 @@ function BookingForm(props) {
                         id="occasion"
                         value={occasionType}
                         onChange={(e) => setOccasionType(e.target.value)}
+                        required
                     >
                         <option value={"Birthday"}>Birthday</option>
                         <option value={"Anniversary"}>Anniversary</option>
                     </select>
                 </div>
-                <button disabled={!reservationDate && !reservationTime && !guestsCount && !occasionType} type="submit" className="btn-submit">Make Your reservation</button>
+                <button disabled={!reservationDate && !reservationTime && !guestsCount && !occasionType} type="submit" className="btn-submit" aria-label="On Click">Make Your reservation</button>
             </fieldset>
         </form>
     </>
