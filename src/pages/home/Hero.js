@@ -7,7 +7,7 @@ function Hero() {
     return <section className="section-hero">
         <div className="container">
         <div>
-            <div className="title">Little Lemon</div>
+            <div className="title" data-testid="title">Little Lemon</div>
             <div className="sub-title">Chicago</div>
             <p className="text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
             <Link className="btn-primary" to="./booking" aria-label="On Click">Reserve a table</Link>

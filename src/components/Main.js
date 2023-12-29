@@ -1,21 +1,22 @@
 import React, { useEffect, useReducer, useState } from "react";
 import { Route, Routes } from 'react-router-dom';
-import Footer from "./Footer";
 import HomePage from "../pages/home/Homepage";
 import BookingForm from "../pages/booking/BookingForm";
-import Header from "./Header";
+
+const updateTimes = (state, action) => {
+    console.log(action)
+    console.log(state)
+    return state;
+}
+
+const initializeTimes = () => {
+    const fetchApi = submitAPI("12/29/2023");
+    console.log("fetchAPi",fetchApi);
+    return ["17.00", "17.30", "18.00", "18.30"];
+}
 
 function Main() {
     // const [availableTimes, setAvailableTimes]= useState([]);
-    const updateTimes = (state, action) => {
-        console.log(action)
-        console.log(state)
-        return state;
-    }
-
-    const initializeTimes = () => {
-        return ["17.00", "17.30", "18.00", "18.30"];
-    }
 
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
@@ -26,12 +27,10 @@ function Main() {
 //       .catch((error) => console.log(error)); 
 //   }; 
     return <>
-        <Header />
         <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/booking" element={<BookingForm availableTimes={availableTimes} dispatch={dispatch} />}></Route>
         </Routes>
-        <Footer />
     </>
 }
 

@@ -9,12 +9,12 @@ function Nav() {
             <div className="container">
             <div className="logo-wrap"><img src={logo} alt="logo" className="logo"></img></div>
             <ul>
-                <li><Link>Home</Link></li>
-                <li><Link>About</Link></li>
-                <li><Link>Menu</Link></li>
-                <li><Link>Reservation</Link></li>
-                <li><Link>Order Online</Link></li>
-                <li><Link>Login</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/menu">Menu</Link></li>
+                <li><Link to="/booking">Reservation</Link></li>
+                <li><Link to="/order">Order Online</Link></li>
+                <li><Link to="/login">Login</Link></li>
             </ul>
             </div>
         </nav>

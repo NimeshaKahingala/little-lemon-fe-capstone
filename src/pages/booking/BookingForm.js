@@ -37,6 +37,7 @@ function BookingForm(props) {
                     <label htmlFor="res-time">Choose time</label>
                     <select
                         id="res-time"
+                        data-testid="res-time"
                         value={reservationTime}
                         onChange={(e) => setReservationTime(e.target.value)}
                         required
@@ -55,7 +56,7 @@ function BookingForm(props) {
                         max="10"
                         id="guests"
                         value={guestsCount}
-                        onChange={(e) => setGuestCount(e.target.value)} 
+                        onChange={(e) => setGuestCount(e.target.value)}
                         required
                     />
                 </div>
