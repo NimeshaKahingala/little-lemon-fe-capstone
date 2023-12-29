@@ -10,8 +10,6 @@ const updateTimes = (state, action) => {
 }
 
 const initializeTimes = () => {
-    const fetchApi = submitAPI("12/29/2023");
-    console.log("fetchAPi",fetchApi);
     return ["17.00", "17.30", "18.00", "18.30"];
 }
 
