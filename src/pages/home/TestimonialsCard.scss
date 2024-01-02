@@ -21,6 +21,16 @@
         width: 150px;
     }
 
+    .review {
+        align-self: flex-start;
+        display: flex;
+        margin-top: 10px;
+
+        .star-icon {
+            width: 15px;
+        }
+    }
+
     .text {
         font-size: 15px;
         line-height: 22px;

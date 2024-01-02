@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './BookingForm.scss';
 
 function BookingForm(props) {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
     const [reservationDate, setReservationDate] = useState("");
     const [reservationTime, setReservationTime] = useState("");
     const [guestsCount, setGuestCount] = useState(1);
@@ -19,6 +21,28 @@ function BookingForm(props) {
         <h2 className="booking-title">Table reservation</h2>
         <form onSubmit={handleSubmit} className="form-reservation">
             <fieldset>
+                <div className="form-fields">
+                    <label>First Name</label>
+                    <input
+                        id="first-name"
+                        value={firstName}
+                        onChange={(e) => {
+                            setFirstName(e.target.value);
+                        }}
+                        required
+                    />
+                </div>
+                <div className="form-fields">
+                    <label>Last Name</label>
+                    <input
+                        id="last-name"
+                        value={lastName}
+                        onChange={(e) => {
+                            setLastName(e.target.value);
+                        }}
+                        required
+                    />
+                </div>
                 <div className="form-fields">
                     <label htmlFor="res-date">Choose date</label>
                     <input

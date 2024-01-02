@@ -2,6 +2,7 @@ import React, { useEffect, useReducer, useState } from "react";
 import { Route, Routes } from 'react-router-dom';
 import HomePage from "../pages/home/Homepage";
 import BookingForm from "../pages/booking/BookingForm";
+import Confirmation from "../pages/booking/bookingConfirmation/BookingConfirmation";
 
 const updateTimes = (state, action) => {
     console.log(action)
@@ -28,6 +29,7 @@ function Main() {
         <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/booking" element={<BookingForm availableTimes={availableTimes} dispatch={dispatch} />}></Route>
+            <Route path="/booking/confirmation" element={<Confirmation />}></Route>
         </Routes>
     </>
 }

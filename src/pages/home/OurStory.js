@@ -4,7 +4,7 @@ import chefBImg from '../../assets/Mario and Adrian b.jpg';
 import './OurStory.scss';
 
 function OurStory() {
-    return <section className="section-our-story container">
+    return <section id="about" className="section-our-story container">
         <h1 className="title">Little Lemon</h1>
         <h3 className="sub-title">Chicago</h3>
         <div className="content-inner">
